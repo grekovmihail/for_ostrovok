@@ -4,7 +4,7 @@ __all__ = (
 
 
 def input_year(now):
-    print(" Input year of month please")
+    print("Введите год")
     try:
         year = int(input())
         if (year > 2013) & (year <= now.year):
