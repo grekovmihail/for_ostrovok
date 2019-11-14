@@ -1,0 +1,8 @@
+SELECT  A.name, A.department, A.salary
+FROM employee A
+WHERE A.salary = (SELECT max(salary)
+					 FROM employee B
+				 	 where B.department = A.department
+				 )
+ORDER BY department
+;
